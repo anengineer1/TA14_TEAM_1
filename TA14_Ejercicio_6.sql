@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS Ejercicio6;
+USE Ejercicio6;
+
+CREATE TABLE IF NOT EXISTS Peliculas(
+codigo INT AUTO_INCREMENT,
+nombre VARCHAR (100) NOT NULL,
+calificacionEdad INT NOT NULL,
+PRIMARY KEY (codigo));
+
+CREATE TABLE IF NOT EXISTS Salas(
+codigo INT AUTO_INCREMENT,
+nombre VARCHAR (100),
+id_pelicula INT NOT NULL, 
+PRIMARY KEY(codigo),
+FOREIGN KEY(id_pelicula) REFERENCES Peliculas (codigo) ON DELETE CASCADE ON UPDATE CASCADE);
+
