@@ -9,6 +9,7 @@ capacidad INT NOT NULL
 
 CREATE TABLE DIRECTORES (
 dni VARCHAR(8) NOT NULL PRIMARY KEY,
+nom_apels NVARCHAR(255),
 dni_jefe VARCHAR(8) NOT NULL,
 despacho INT NOT NULL,
 KEY (dni_jefe),
