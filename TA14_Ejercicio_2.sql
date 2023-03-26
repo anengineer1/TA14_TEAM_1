@@ -97,3 +97,13 @@ references autor(claveautor)
 on delete cascade
 on update cascade
 );
+
+SELECT * from editorial;
+select * from estrito_por;
+select * from trata_sobre;
+select * from prestamo;
+select * from socio;
+select *from tema;
+select * from Libro;
+select * from autor;
+select * from ejemplar;
