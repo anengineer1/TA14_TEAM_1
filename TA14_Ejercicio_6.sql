@@ -14,3 +14,5 @@ id_pelicula INT NOT NULL,
 PRIMARY KEY(codigo),
 FOREIGN KEY(id_pelicula) REFERENCES Peliculas (codigo) ON DELETE CASCADE ON UPDATE CASCADE);
 
+SELECT * FROM Peliculas;
+SELECT * FROM Salas;
