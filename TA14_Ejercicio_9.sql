@@ -18,16 +18,16 @@ primary key (ID)
 create table Asignado_a(
 cientifico varchar(8),
 proyecto char(4),
-primary key (cientifico),
 key (cientifico),
 foreign key (cientifico)
-references cientifico,
-primary key (proyecto),
+references cientificos (DNI)
+on delete no action on update cascade,
 key (proyecto),
 foreign key(proyecto)
-references proyecto
-on delete set null
-on update cascade
+references proyecto (ID)
+on delete no action
+on update cascade,
+primary key (cientifico, proyecto)
 );
 
 SELECT * from cientificos;
