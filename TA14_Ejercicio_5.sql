@@ -14,3 +14,6 @@ valor INT NOT NULL,
 id_almacen INT, 
 PRIMARY KEY (NumReferencia),
 FOREIGN KEY (id_almacen) REFERENCES Almacenes(codigo) ON DELETE CASCADE ON UPDATE CASCADE);
+
+SELECT * FROM Almacenes;
+SELECT * FROM Cajas;
