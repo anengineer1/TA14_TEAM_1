@@ -29,3 +29,7 @@ on delete no action
 on update cascade,
 primary key (cientifico, proyecto)
 );
+
+SELECT * from cientificos;
+SELECT * from proyecto;
+select * from Asignado_a;
