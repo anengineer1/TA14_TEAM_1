@@ -12,3 +12,6 @@ nombre NVARCHAR(100) NOT NULL,
 apellidos NVARCHAR(255) NOT NULL,
 codigo_departamento INT,
 FOREIGN KEY(codigo_departamento) REFERENCES Departamentos (codigo));
+
+SELECT * FROM Departamentos;
+SELECT * FROM Empleados;
